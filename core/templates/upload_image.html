@@ -1,0 +1,6 @@
+<!-- image_processing_app/templates/upload_image.html -->
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Upload Image</button>
+</form>

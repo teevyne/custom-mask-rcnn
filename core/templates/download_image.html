@@ -1,0 +1,5 @@
+<!-- image_processing_app/templates/download_image.html -->
+{% for image in processed_images %}
+    <img src="{{ image.processed_image.url }}" alt="Processed Image">
+    <a href="{{ image.processed_image.url }}" download>Download Processed Image</a>
+{% endfor %}
